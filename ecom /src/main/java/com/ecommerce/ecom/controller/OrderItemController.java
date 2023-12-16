@@ -1,5 +1,12 @@
 package com.ecommerce.ecom.controller;
-
+import com.ecommerce.ecom.model.OrderItem;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
+import com.ecommerce.ecom.service.OrderItemService;
+import java.util.List;
+import java.util.Optional;
 
 @RequestMapping("/api/order-items")
 public class OrderItemController {
