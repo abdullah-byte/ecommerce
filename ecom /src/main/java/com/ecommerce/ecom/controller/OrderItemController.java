@@ -10,10 +10,10 @@ import java.util.Optional;
 
 @RequestMapping("/api/order-items")
 public class OrderItemController {
-    private final OrderItemService orderItemService;
+    private final OrderItemServices orderItemService;
 
     @Autowired
-    public OrderItemController(OrderItemService orderItemService) {
+    public OrderItemController(OrderItemServices orderItemService) {
         this.orderItemService = orderItemService;
     }
 
