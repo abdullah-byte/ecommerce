@@ -25,4 +25,8 @@ public class ProductServices {
     public Object fetchProduct(){
         return productRepo.findAll();
     }
+
+     public Object fetchProductById(Long id) {
+        return productRepository.findById(id);
+    }
 }
